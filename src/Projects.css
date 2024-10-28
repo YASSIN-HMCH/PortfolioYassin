@@ -1,0 +1,104 @@
+.all {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically center */
+    width: 85%;
+    margin-left: 15%;
+    margin-bottom: -50px;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    
+
+}
+.he2{
+    margin-top: 50px;
+    margin-bottom: -10px;
+    color: rgb(107, 105, 105);
+    text-align: center;
+    font-style: oblique;
+}
+.descriptio{
+    color: rgb(149, 146, 146);
+}
+
+.img-top { 
+    width: 14%; /* Set a smaller width for the image */
+    height: auto; /* Maintain aspect ratio based on width */
+    max-height: 100%; /* Set a maximum height */
+    margin-right: 60px; /* Space between the image and text */
+}
+
+.text-content {
+    flex-grow: 1; 
+    margin-top: 40px;
+}
+
+.headi {
+    font-weight: bold;
+    font-style: oblique;
+    color: rgb(205, 205, 98);
+    margin: 0;
+}
+
+.tec {
+    color: rgb(128, 204, 227);
+}
+.sty{
+    color: rgb(52, 83, 92);
+    padding: 3px;
+    margin: 4px;
+    background-color: rgb(16, 16, 16);
+    border-radius: 5px;
+}
+
+.paragra {
+    color: white;
+}
+/* @media (max-width: 1150px) {
+    .all {
+        display: flex; 
+        align-items: center; 
+        width: 100%;
+        margin-left: 20%;
+        padding-bottom: 25px;
+    
+    }
+} */
+/* Media Queries for Responsive Design */
+@media (max-width: 1150px) {
+    .img-top {
+        width: 30%; /* Adjust width for medium screens */
+    }
+}
+
+@media (max-width: 770px) {
+    .all {
+        flex-direction: column; /* Stack items on small screens */
+        align-items: flex-start; /* Align items to the start */
+        margin: 10px 0; /* Adjust margin */
+    }
+
+    .img-top {
+        width: 50%; /* Full width for the image on small screens */
+        margin: 0 0 10px 0; /* Remove margin on sides */
+    }
+
+    .text-content {
+        margin-top: 0; /* No margin on top */
+        width: 100%; /* Full width for text on small screens */
+    }
+}
+.project-button {
+    display: inline-block; /* Make the anchor behave like a button */
+    background-color: rgb(54, 54, 24); /* Button background color */
+    color: black; /* Text color */
+    border: none; /* Remove default border */
+    padding: 2px 10px; /* Padding for the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    margin-top: 5px; /* Space above the button */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline from link */
+}
+
+.project-button:hover {
+    background-color: rgb(66, 66, 29); /* Change color on hover */
+}
+

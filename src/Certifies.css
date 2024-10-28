@@ -1,0 +1,54 @@
+.allTh {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out the containers evenly */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    margin: 10px auto; /* Center the container with reduced margin */
+    max-width: 1200px; /* Optional: set a max width for better control */
+}
+
+.image-container {
+    text-align: center; /* Center the text under the image */
+    margin: 5px; /* Reduced margin for less space between cards */
+    margin-bottom:-50px;
+    width: calc(33.33% - 10px); /* Make each card take up about 1/3 of the width minus margins */
+}
+.he1{
+    margin-top: 50px;
+    margin-bottom: -40px;
+    color: rgb(107, 105, 105);
+    text-align: center;
+    font-style: oblique;
+}
+
+.img-top1 {
+    width: 100%; /* Make image take full width of the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.image-title {
+    font-size: 1.4rem; /* Adjust font size */
+    font-style: oblique;
+    color: rgb(205, 205, 98);
+    margin-top: 5px; /* Space between image and title */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .image-container {
+        width: calc(50% - 10px); /* Two cards in a row on smaller screens */
+    }
+
+    .img-top1 {
+        width: 100%; /* Keep full width */
+    }
+
+    .image-title {
+        font-size: 0.9rem; /* Smaller font size on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .image-container {
+        width: 100%; /* One card per row on very small screens */
+    }
+}
