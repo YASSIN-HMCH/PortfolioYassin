@@ -66,7 +66,7 @@ function Certifies(){
         <h3 className="image-title">Certificate in JavaScript</h3>
       </div>
       <div className="image-container">
-        <img src="/img/certificatGiT.png" className="img-top1" alt="Project Three" />
+        <img src="/img/certificatGIT.png" className="img-top1" alt="Project Three" />
         <h3 className="image-title">Certificate in GIT</h3>
       </div>
       <div className="image-container">
